@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	fmt.Println("Welcome to Kafka 101")
+	fmt.Println("Welcome to consumer!")
 }
