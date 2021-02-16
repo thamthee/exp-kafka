@@ -40,6 +40,7 @@ func run(log *log.Logger) error {
 
 	defer r.Close()
 
+	log.Println("start consuming ...")
 	for {
 		m, err := r.ReadMessage(context.Background())
 		if err != nil {

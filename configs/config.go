@@ -39,5 +39,9 @@ func New(file io.Reader, fileType string) (Config, error) {
 		return Config{}, errors.Wrap(err, "unable to decode config")
 	}
 
+	if url, ok := viper.Get("kafkaURL").(string); ok {
+		conf.Kafka.Brokers = []string{url}
+	}
+
 	return conf, nil
 }

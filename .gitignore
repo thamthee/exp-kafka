@@ -1,5 +1,6 @@
 ### custom Config template
 configs/config.yml
+configs/kafka-variables.env
 
 # Created by .ignore support plugin (hsz.mobi)
 ### macOS template
