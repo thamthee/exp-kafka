@@ -3,7 +3,7 @@ version: '2'
 services:
   zookeeper:
     hostname: zookeeper
-    image: wurstmeister/zookeepeoooor
+    image: wurstmeister/zookeeper
     expose:
       - "2181"
     ports:
